@@ -1,0 +1,57 @@
+.frame_title{
+    margin-left:5px;
+    width:80%;
+    height:40px;
+    line-height:40px;
+    float:left;
+    color: #FFFFFF;
+}
+.frame_top{
+    width:100%;
+    height:40px;
+    overflow: auto;
+    background-color:#267ef5;
+}
+.close_i{
+    cursor: pointer;
+    width:40px;
+    height:40px;
+    float:right;
+    display:inline-block;
+    background:url("../img/close.png") no-repeat center center;
+}
+.frame_div{
+    float:left;
+    position:relative;
+    width:auto;
+    height:auto;
+    border:1px solid #d3d3d3;
+    box-sizing:border-box;
+    font-size:14px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    border-radius: 5px;
+    background-color:#fefefe;
+}
+.frame_div:before,
+.frame_div:after{
+    position:absolute;
+    content:'';
+    width:14px;
+    height:14px;
+    bottom:-8px;
+    left:75%;
+    margin-left:-7px;
+    overflow:hidden;
+    pointer-events:none;
+    -webkit-transform:rotate(45deg);
+    -mz-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.frame_div:before{
+    background:#d3d3d3;
+    box-shadow:1px 1px 2px rgba(0,0,0,.5)
+}
+.frame_div:after{
+    bottom:-7px;
+    background:#fff;
+}

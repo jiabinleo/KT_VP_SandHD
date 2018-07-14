@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>温州市气象局沙盘控制系统</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="./img/round.png" alt="返回" srcset=""> 返回
+        </div>
+        <div class="right">
+            <img src="./img/logo.png" alt="" srcset=""> 温州市气象局沙盘控制系统
+        </div>
+    </header>
+    <section>
+        <div id="map_div" class="map"></div>
+        <div role="top_bottom" class="top_bottom">
+            <div class="fl lonLat" role="lon_lat">
+                <input class="longitute" role="longitute" value="116.1262" />
+                <input class="latitude" role="latitude" value="24.2872" />
+                <span class="map_point"></span>
+            </div>
+            <div class="top_right_tool_div lat_and_long_img">
+                <span class="top_right_tool_img"></span>
+                <span class="top_right_tool_text" role="default_map_extend">初始位置</span>
+            </div>
+            <div class="top_right_tool_div default_map default_map_img">
+                <span class="top_right_tool_img"></span>
+                <span class="top_right_tool_text default_map_text">默认地图</span>
+                <span class="drop_icon" role="default_map"></span>
+            </div>
+        </div>
+        <div role="top_right_div">
+            <div role="default_map_menu" class="default_map_menu" style="height: 0px;">
+                <div class="default_map_menu_div map_div tool_div" data-id="default_map_menu_div">
+                    <span class="top_right_tool_img"></span>
+                    <span class="default_map_menu_text">行政区划</span>
+                </div>
+                <div class="image_map_menu_div map_div tool_div" data-id="image_map_menu_div">
+                    <span class="top_right_tool_img"></span>
+                    <span class="default_map_menu_text top_right_tool_img_right">影像图</span>
+                </div>
+            </div>
+        </div>
+        <div class="menu-wrap">
+            <div class="menu-inner" id="menuInner">
+                <div class="menu-inner-left">
+                    <div class="menu-quyu">
+                        区域
+                    </div>
+                    <div class="menu-leixing">
+                        类型
+                    </div>
+                </div>
+                <div class="menu-quyu-inner" id="quyuInner">
+                </div>
+                <div class="menu-leixing-inner" id="leixingInner">
+                </div>
+            </div>
+            <div class="menu-title" id="menuTitle">
+                <img src="./img/grid.png" alt="" srcset=""> 沙盘互动
+                <img class="arrow" id="arrow" src="./img/arrow.png" alt="" srcset="">
+            </div>
+        </div>
+        <div id="alarm">
+        </div>
+        <div id="station_list" class="station_list">
+            <div class="station_select">
+                <span class="title">站点搜索</span>
+                <input id="stations_name" type="text" placeholder="站点名称">
+                <i id="search_stations">
+                    <img src="./img/magnifying.png" alt="搜索">
+                </i>
+            </div>
+            <div class="station_title">
+                <span>站点</span><span>经度</span><span>纬度</span>
+            </div>
+            <ul class="station_message" id="station_message">
+            </ul>
+        </div>
+    </section>
+</body>
+<!-- <link rel="stylesheet" type="text/css" href="./css/fallingArea.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="./css/messageEventInfo.css"> -->
+<link rel="stylesheet" href="./js/map/cesium/Widgets/widgets.css">
+<link rel="stylesheet" href="./js/map/css/gis.css">
+<link rel="stylesheet" href="./js/map/css/frame.css">
+<link rel="stylesheet" href="./css/index.css">
+<script src="./js/jquery-1.9.1.min.js"></script>
+<!-- 地图start -->
+<script src="./js/map/cesium/Cesium.js"></script>
+<script src="./js/map/cesiuminit.js"></script>
+<script src="./js/map/mouseEvent.js"></script>
+<script src="./js/map/gisUtil.js"></script>
+<script src="./js/map/drawler/DrawHelper.js"></script>
+<script src="./js/GISRelated.js"></script>
+<!-- 地图end -->
+<script src="./js/echarts/echarts.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
